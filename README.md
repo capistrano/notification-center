@@ -8,7 +8,7 @@ capistrano-nc integrates Capistrano and Mountain Lion's Notification Center.
 Installation
 ------------
 
-Just put it in your Gemfile (`gem 'capistrano-nc'`) and
+Just put it in your Gemfile: `gem 'capistrano-nc'`. That's it!
 
 ##Contributors
 
