@@ -11,17 +11,23 @@ module CapistranoNc
 
         namespace :nc do
           task :finished do
-            announced_stage = fetch(:stage, 'production')
+            if available?
+              announced_stage = fetch(:stage, 'production')
 
-            announcement = "\u2705 Successfully deployed "
-            announcement += if fetch(:branch, nil)
-              "#{application}'s #{branch} to #{announced_stage}"
-            else
-              "#{application} to #{announced_stage}"
+              announcement = "\u2705 Successfully deployed "
+              announcement += if fetch(:branch, nil)
+                "#{application}'s #{branch} to #{announced_stage}"
+              else
+                "#{application} to #{announced_stage}"
+              end
+
+              TerminalNotifier.notify announcement, :title => "Capistrano"
             end
-
-            TerminalNotifier.notify announcement, :title => "Capistrano"
           end
+        end
+
+        def available?
+          `uname`.strip == 'Darwin' && `sw_vers -productVersion`.strip >= '10.8'
         end
       end
     end
