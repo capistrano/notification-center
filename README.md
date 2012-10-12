@@ -8,10 +8,11 @@ capistrano-nc integrates Capistrano and Mountain Lion's Notification Center.
 Installation
 ------------
 
-Just put `gem 'capistrano-nc'` in your Gemfile and add `require "capistrano-nc"` in the top of your deploy.rb. That's it!
+Just put `gem 'capistrano-nc'` in your Gemfile and add `require "capistrano-nc"` at the top of your deploy.rb. That's it!
 
 ##Contributors
 
 - [Kir Shatrov](https://github.com/kirs/) (Evrone)
 
-##Feel free for pull requests!
+##Feel free to pull request!
+
