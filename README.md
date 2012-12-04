@@ -10,6 +10,12 @@ Installation
 
 Just put `gem 'capistrano-nc'` in your Gemfile and add `require "capistrano-nc"` at the top of your deploy.rb. That's it!
 
+By default it will run the `nc:finished` task after your `deploy` or `deploy:migrations`. If this behavior doesn't suit you, you can hook `nc:finished` to any custom task by editing `deploy.rb`:
+
+```
+after `your:task`, `nc:finished`
+```
+
 ##Contributors
 
 - [Kir Shatrov](https://github.com/kirs/) (Evrone)
