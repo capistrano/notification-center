@@ -4,9 +4,11 @@ Gem::Specification.new do |gem|
   gem.version       = '0.1.0'
   gem.authors       = ['Kir Shatrov']
   gem.email         = ['shatrov@me.com']
-  gem.description   = 'https://github.com/evrone/capistrano-nc'
   gem.summary       = "Capistrano 3 integration with Mountain Lion's Notification Center"
   gem.description   = 'https://github.com/evrone/capistrano-nc'
+  gem.homepage      = 'https://github.com/evrone/capistrano-nc'
+
+  gem.licenses      = %w(MIT)
 
   gem.add_dependency 'terminal-notifier', '~> 1.4.2'
 
