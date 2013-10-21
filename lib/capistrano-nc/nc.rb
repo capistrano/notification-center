@@ -1,0 +1,1 @@
+load File.expand_path("../tasks/nc.rake", __FILE__)
