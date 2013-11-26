@@ -10,10 +10,6 @@ module CapistranoNc
   end
 end
 
-namespace :deploy do
-  after :finished, 'nc:finished'
-end
-
 namespace :nc do
   task :finished do
     if CapistranoNc.nc_supported?
@@ -30,3 +26,5 @@ namespace :nc do
     end
   end
 end
+
+after 'deploy:finished', 'nc:finished'
