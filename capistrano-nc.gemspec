@@ -11,6 +11,7 @@ Gem::Specification.new do |gem|
   gem.licenses      = %w(MIT)
 
   gem.add_dependency 'terminal-notifier', '~> 1.4.2'
+  gem.add_dependency 'capistrano', '~> 3.1'
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
