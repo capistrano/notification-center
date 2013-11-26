@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |gem|
   gem.name          = 'capistrano-nc'
-  gem.version       = '0.1.0'
+  gem.version       = '0.1.1'
   gem.authors       = ['Kir Shatrov']
   gem.email         = ['shatrov@me.com']
   gem.summary       = "Capistrano 3 integration with Mountain Lion's Notification Center"
