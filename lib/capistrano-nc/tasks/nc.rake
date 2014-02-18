@@ -22,9 +22,18 @@ namespace :nc do
         "#{application} to #{announced_stage}"
       end
 
-      TerminalNotifier.notify(announcement, title: "Capistrano")
+      terminal = fetch(:nc_terminal, 'com.apple.Terminal')
+      TerminalNotifier.notify(announcement, title: "Capistrano", sender: terminal, activate: terminal)
     end
   end
 end
 
 after 'deploy:finished', 'nc:finished'
+
+namespace :load do
+  task :defaults do
+
+    set :nc_terminal, 'com.apple.Terminal'
+
+  end
+end

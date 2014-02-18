@@ -36,6 +36,8 @@ By default it will run the `nc:finished` task after your `deploy` or `deploy:mig
 after `your:task`, `nc:finished`
 ```
 
+Terminal.app is opened when the notification is clicked. To use an alternative terminal set `:nc_terminal` to the bundle identifier e.g. `set :nc_terminal, 'com.googlecode.iterm2'` for iTerm2.
+
 ## Contributors
 
 - [Kir Shatrov](https://github.com/kirs/)
