@@ -10,7 +10,7 @@ capistrano-nc integrates Capistrano and Mountain Lion's Notification Center.
 
 ```ruby
 # Gemfile
-gem 'capistrano-nc', '~> 0.1.0'
+gem 'capistrano-nc', '~> 0.1.3'
 ```
 
 ```ruby

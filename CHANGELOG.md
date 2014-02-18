@@ -1,3 +1,7 @@
+## 0.1.3
+
+* Added support for "activate" and "sender" terminal-notifier options (#5)
+
 ## 0.1.2
 
 * Fixed dependency on Capistrano core
