@@ -38,6 +38,8 @@ after `your:task`, `nc:finished`
 
 Terminal.app is opened when the notification is clicked. To use an alternative terminal set `:nc_terminal` to the bundle identifier e.g. `set :nc_terminal, 'com.googlecode.iterm2'` for iTerm2.
 
+The default terminal timeout is set to 5 seconds. To Change it `set :nc_terminal_timeout '10'` for other number in seconds.
+
 ## Contributors
 
 - [Kir Shatrov](https://github.com/kirs/)
