@@ -3,6 +3,7 @@
 https://github.com/capistrano/notification-center/compare/v0.1.4...HEAD
 
 * Your contribution here!
+* [#9](https://github.com/capistrano/notification-center/pull/9): Update terminal-notifier dependency to ~> 2.0. This fixes a bug where capistrano-nc would hang forever waiting for the notification to dismiss.
 
 ## 0.1.4
 

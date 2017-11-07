@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
 
   gem.licenses      = %w(MIT)
 
-  gem.add_dependency 'terminal-notifier', '~> 1.6'
+  gem.add_dependency 'terminal-notifier', '~> 2.0'
   gem.add_dependency 'capistrano', '~> 3.0'
 
   gem.files         = `git ls-files`.split($\)
