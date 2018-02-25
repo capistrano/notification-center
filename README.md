@@ -10,7 +10,7 @@ capistrano-nc integrates Capistrano and OS X Notification Center.
 
 ```ruby
 # Gemfile
-gem 'capistrano-nc', '~> 0.1'
+gem 'capistrano-nc', '~> 0.2'
 ```
 
 ```ruby
