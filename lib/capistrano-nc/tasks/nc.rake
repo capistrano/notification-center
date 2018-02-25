@@ -23,7 +23,8 @@ namespace :nc do
       end
 
       terminal = fetch(:nc_terminal, 'com.apple.Terminal')
-      TerminalNotifier.notify(announcement, title: "Capistrano", sender: terminal, activate: terminal)
+      timeout = fetch(:nc_terminal_timeout, '5')
+      TerminalNotifier.notify(announcement, title: "Capistrano", sender: terminal, activate: terminal, timeout: timeout)
     end
   end
 end
@@ -32,7 +33,7 @@ after 'deploy:finished', 'nc:finished'
 
 namespace :load do
   task :defaults do
-
+    set :nc_terminal_timeout, '5'
     set :nc_terminal, 'com.apple.Terminal'
 
   end
