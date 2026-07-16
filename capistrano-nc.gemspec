@@ -7,6 +7,7 @@ Gem::Specification.new do |gem|
   gem.summary       = "Capistrano 3 integration with the macOS Notification Center"
   gem.description   = 'https://github.com/capistrano/notification-center'
   gem.homepage      = 'https://github.com/capistrano/notification-center'
+  gem.metadata      = { "rubygems_mfa_required" => "true" }
 
   gem.licenses      = %w(MIT)
 
